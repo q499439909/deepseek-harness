@@ -1,0 +1,6 @@
+.card { display: grid; gap: 12px; font-size: 13px; color: var(--dsw-alias-label-secondary); }
+.card p, .card dl { margin: 0; }
+.card dl { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 12px; }
+.card dd { margin: 0; overflow-wrap: anywhere; }
+.card pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+.readiness { display: flex; align-items: center; gap: 8px; }

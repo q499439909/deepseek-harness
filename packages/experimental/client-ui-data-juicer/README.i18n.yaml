@@ -1,0 +1,46 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write packages/experimental/client-ui-data-juicer/README.md
+/:
+  en: 31f2a08e2a70445f
+  zh: dac304d4298d469a
+/deepseek-ai-dsh-experimental-client-ui-data-juicer:
+  en: 392a3b935530f026
+  zh: ebfd3a96e8c2615f
+/deepseek-ai-dsh-experimental-client-ui-data-juicer/summary:
+  en: 31ee3acc7cb24b71
+  zh: e9d6d0f636422225
+/deepseek-ai-dsh-experimental-client-ui-data-juicer/table-of-contents:
+  en: d152484eb41ac6b4
+  zh: a81c948ef7358d47
+/deepseek-ai-dsh-experimental-client-ui-data-juicer/use-this-package:
+  en: 4b6fcb71ffae0c4c
+  zh: ff5c1a80ed72b6ac
+/deepseek-ai-dsh-experimental-client-ui-data-juicer/understand-the-implementation:
+  en: 59bf805d17e23203
+  zh: eb4c033ddbb02d42
+/deepseek-ai-dsh-experimental-client-ui-data-juicer/further-exploration:
+  en: d030c723456e3a53
+  zh: ce73be0ba5b655e0
+/deepseek-ai-dsh-experimental-client-ui-data-juicer/model-experience:
+  en: 215e7ba838619b7b
+  zh: a311da3843709f90
+/deepseek-ai-dsh-experimental-client-ui-data-juicer/model-experience/connection-readiness-card:
+  en: 8ff67a6dd996085a
+  zh: 07dff0323c54a403
+/deepseek-ai-dsh-experimental-client-ui-data-juicer/model-experience/connection-readiness-card/what-the-model-sees:
+  en: 7d5459c2774087de
+  zh: c7d58aa7adfd6d80
+/deepseek-ai-dsh-experimental-client-ui-data-juicer/model-experience/connection-readiness-card/token-effect:
+  en: d444235e5198287f
+  zh: 7af90b02ff879158
+/deepseek-ai-dsh-experimental-client-ui-data-juicer/model-experience/connection-readiness-card/kv-cache-effect:
+  en: 60835eca1cee4e0e
+  zh: 3b5579ceccd5b5e7
+/deepseek-ai-dsh-experimental-client-ui-data-juicer/known-limitations-and-deferred-work:
+  en: d8cf3336884aaf35
+  zh: 916e78833fa38e8f
+/deepseek-ai-dsh-experimental-client-ui-data-juicer/known-limitations-and-deferred-work/dev-note:
+  en: 0225ba087c5266f3
+  zh: a681e499ae55c8b6

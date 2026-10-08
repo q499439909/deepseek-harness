@@ -1,0 +1,46 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write packages/experimental/data-juicer-bundle/README.md
+/:
+  en: cb7ab5f03f019ed0
+  zh: 09e892ef72d108a7
+/deepseek-ai-dsh-experimental-data-juicer-bundle:
+  en: 799473b8b189f733
+  zh: ee8f88bb5459d5e0
+/deepseek-ai-dsh-experimental-data-juicer-bundle/summary:
+  en: 4963d9a595fca1d4
+  zh: 094c7e727cc3678f
+/deepseek-ai-dsh-experimental-data-juicer-bundle/table-of-contents:
+  en: d152484eb41ac6b4
+  zh: a81c948ef7358d47
+/deepseek-ai-dsh-experimental-data-juicer-bundle/use-this-package:
+  en: e9d929a23c70e2c6
+  zh: bf0cf88e5ca03919
+/deepseek-ai-dsh-experimental-data-juicer-bundle/understand-the-implementation:
+  en: e3854148fa6ce8e4
+  zh: e5fe42886f583d19
+/deepseek-ai-dsh-experimental-data-juicer-bundle/further-exploration:
+  en: 545aa826b3350f0d
+  zh: 3626e06c801dcd32
+/deepseek-ai-dsh-experimental-data-juicer-bundle/model-experience:
+  en: 215e7ba838619b7b
+  zh: a311da3843709f90
+/deepseek-ai-dsh-experimental-data-juicer-bundle/model-experience/metadata-discovery-tool:
+  en: e2dc53199fe70818
+  zh: 41a83f96cf3eb184
+/deepseek-ai-dsh-experimental-data-juicer-bundle/model-experience/metadata-discovery-tool/what-the-model-sees:
+  en: e54963cc1ccc3677
+  zh: 2597255114a0585f
+/deepseek-ai-dsh-experimental-data-juicer-bundle/model-experience/metadata-discovery-tool/token-effect:
+  en: f9dcf8c70073edb8
+  zh: befb1dc8a6ebac1a
+/deepseek-ai-dsh-experimental-data-juicer-bundle/model-experience/metadata-discovery-tool/kv-cache-effect:
+  en: 2258b11163961e73
+  zh: b4f1bf651f9b40e8
+/deepseek-ai-dsh-experimental-data-juicer-bundle/known-limitations-and-deferred-work:
+  en: b2595eac51e7cfc2
+  zh: e4dba6bd8f5585ed
+/deepseek-ai-dsh-experimental-data-juicer-bundle/known-limitations-and-deferred-work/dev-note:
+  en: 0225ba087c5266f3
+  zh: a681e499ae55c8b6

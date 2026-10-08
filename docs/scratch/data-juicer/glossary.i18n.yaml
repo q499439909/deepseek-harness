@@ -1,0 +1,10 @@
+# Bilingual-pair consistency record for glossary.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write docs/scratch/data-juicer/glossary.md
+/data-juicer-processing-language:
+  en: 0cba2064856d6fa2
+  zh: c02b9838e853a1f5
+/data-juicer-processing-language/language:
+  en: 0fd951385b97a108
+  zh: 7af4a79063736392

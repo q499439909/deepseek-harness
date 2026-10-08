@@ -1,0 +1,46 @@
+# Bilingual-pair consistency record for design.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write docs/scratch/data-juicer/design.md
+/:
+  en: b98dcd32ef65ac97
+  zh: 450b9d6a01ce331a
+/data-juicer-integration-design:
+  en: 4f0f16655e6ee413
+  zh: 02c95ad447a89159
+/data-juicer-integration-design/summary:
+  en: a0ddcbd366e73ed4
+  zh: ddee41c125072c91
+/data-juicer-integration-design/table-of-contents:
+  en: 78c3d177255d8b45
+  zh: 0c2066661eebf110
+/data-juicer-integration-design/existing-components:
+  en: 3fc632ee33b50459
+  zh: 00bc6819cebadaa6
+/data-juicer-integration-design/dev-note:
+  en: a95bc2555f2d9c81
+  zh: d0e3ce2413678740
+/data-juicer-integration-design/dev-note/scope-and-deployment:
+  en: 7a28b538e47f99f8
+  zh: a7f9a61c5d1402ee
+/data-juicer-integration-design/dev-note/user-workflow:
+  en: bd5fc8f235f2a7f4
+  zh: 3e6bd60da5c255b2
+/data-juicer-integration-design/dev-note/task-states-and-interruption:
+  en: 24b0d689690373ef
+  zh: c396b7c26a708668
+/data-juicer-integration-design/dev-note/durable-records-and-files:
+  en: 1a9aef52bd467715
+  zh: e424c0784015e7a6
+/data-juicer-integration-design/dev-note/web-results:
+  en: 48d6296b3b616dfb
+  zh: 1c31b6c48d44f235
+/data-juicer-integration-design/dev-note/repository-responsibilities:
+  en: 01669bc12f079ece
+  zh: a2d864383b64177e
+/data-juicer-integration-design/dev-note/verification-and-implementation-order:
+  en: 6d7bd12d505733ad
+  zh: 6bcd502e5c3589c1
+/data-juicer-integration-design/dev-note/remaining-engineering-decisions:
+  en: f4e1f954e2fe87ab
+  zh: 3112247825a2b3be

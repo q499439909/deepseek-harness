@@ -119,6 +119,44 @@ MCP prompt templates, human-input elicitation, task-based execution, and resourc
 
 Generated from source by `scripts/gen-cordis-catalog.ts` (verified fresh by `pnpm run verify-cordis-catalog` in doc-sync; regenerate with `pnpm run gen-cordis-catalog`) — the language sides differ only in locale-specific paired document paths. Signature blocks use a `ts cordis-catalog` fence and keep the original source JSDoc; dispatch modes are defined in the [primer](../cordis-primer.md#dispatch-modes), and the framework-inherited `ctx` API lives in [cordis-api/inherited.md](../cordis-api/inherited.md).
 
+<a id="ctxdatajuicer--datajuicer"></a>
+
+### `ctx.dataJuicer` — `DataJuicer`
+
+Metadata service and authenticated Web readiness Remote; processing is not exposed.
+
+```ts cordis-catalog
+/**
+ * Read the connection observation without contacting the service.
+ * @returns detached last verified readiness or explicit unavailability.
+ */
+@Remote status(): DataJuicerStatus
+
+/**
+ * Observe connection changes without adding messages to any Session.
+ * @param signal - browser observation lifetime.
+ * @returns initial and subsequent complete connection observations.
+ */
+@Remote({ mode: 'stream' }) async *follow(signal: AbortSignal): AsyncIterable<DataJuicerStatus>
+
+/**
+ * Retry connection and metadata checks; concurrent requests join one attempt.
+ * @returns verified readiness or the failed attempt's diagnostic.
+ */
+@Remote reconnect(): Promise<DataJuicerStatus>
+
+/**
+ * Read bounded metadata through the closed discovery vocabulary.
+ * @param operation - configuration, loading, or operator metadata.
+ * @param query - optional operator-name regular expression.
+ * @param signal - requesting tool's cancellation lifetime.
+ * @returns upstream metadata text, with reported errors rejected.
+ */
+async discover(operation: DiscoveryOperation, query: string | undefined, signal: AbortSignal): Promise<string>
+```
+
+Source: [`packages/experimental/data-juicer/src/index.ts`](../../packages/experimental/data-juicer/src/index.ts)
+
 <a id="ctxmcpresources--mcpresourceruntime"></a>
 
 ### `ctx.mcpResources` — `McpResourceRuntime`

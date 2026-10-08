@@ -177,6 +177,20 @@ Docs accompany every code change: update affected README and JSDoc contracts tog
 
 `CLAUDE.md` symlinks `AGENTS.md` at root and `packages/`; edit the real file. Keep each rule self-contained while linking high-level docs. Condense when clarity survives; raise a `verify-doc-budgets` ceiling when the required content genuinely needs more space.
 
+## Agent skills
+
+### Issue tracker
+
+Track specs and tickets locally under `.scratch/`; see [issue tracker](docs/agents/issue-tracker.md).
+
+### Triage labels
+
+Use the five default triage statuses; see [triage labels](docs/agents/triage-labels.md).
+
+### Domain docs
+
+Use the existing DSH glossary and decision notes; see [domain docs](docs/agents/domain.md).
+
 ## Vendoring policy
 
 `vendor/` packages are pinned source copies (manifest with upstream SHAs in [vendor/README.md](vendor/README.md)). Update via the sync procedure there; re-apply or retire the logged local modifications; rerun `pnpm run test && pnpm run build`.

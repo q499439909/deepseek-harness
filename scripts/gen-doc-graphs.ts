@@ -108,6 +108,14 @@ const GROUP_ORDER = [
 
 const SERVICE_ROLES: ServiceRole[] = [
   {
+    key: 'dataJuicer',
+    pkg: 'experimental-data-juicer',
+    title: 'Experimental Data-Juicer discovery connection',
+    mode: 'core',
+    consumers: ['experimental-client-ui-data-juicer'],
+    note: 'Owns same-host recipe-flow readiness and bounded metadata discovery; the optional browser contribution displays connection status and reconnect controls.',
+  },
+  {
     key: 'hmr',
     pkg: 'hmr',
     title: 'Serialized module and configuration reloads',

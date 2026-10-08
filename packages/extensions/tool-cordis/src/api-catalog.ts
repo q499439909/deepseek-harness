@@ -875,6 +875,37 @@ export const SERVICE_API: readonly ServiceApiEntry[] = [
     ],
   },
   {
+    key: 'dataJuicer',
+    summary: 'Metadata service and authenticated Web readiness Remote; processing is not exposed.',
+    description: 'Metadata service and authenticated Web readiness Remote; processing is not exposed.',
+    methods: [
+      {
+        signature: '@Remote status(): DataJuicerStatus',
+        description: 'Read the connection observation without contacting the service.',
+        parameters: [],
+        returns: 'detached last verified readiness or explicit unavailability.',
+      },
+      {
+        signature: '@Remote({ mode: \'stream\' }) async *follow(signal: AbortSignal): AsyncIterable<DataJuicerStatus>',
+        description: 'Observe connection changes without adding messages to any Session.',
+        parameters: [{ name: 'signal', description: 'browser observation lifetime.' }],
+        returns: 'initial and subsequent complete connection observations.',
+      },
+      {
+        signature: '@Remote reconnect(): Promise<DataJuicerStatus>',
+        description: 'Retry connection and metadata checks; concurrent requests join one attempt.',
+        parameters: [],
+        returns: 'verified readiness or the failed attempt\'s diagnostic.',
+      },
+      {
+        signature: 'async discover(operation: DiscoveryOperation, query: string | undefined, signal: AbortSignal): Promise<string>',
+        description: 'Read bounded metadata through the closed discovery vocabulary.',
+        parameters: [{ name: 'operation', description: 'configuration, loading, or operator metadata.' }, { name: 'query', description: 'optional operator-name regular expression.' }, { name: 'signal', description: 'requesting tool\'s cancellation lifetime.' }],
+        returns: 'upstream metadata text, with reported errors rejected.',
+      },
+    ],
+  },
+  {
     key: 'deepseekAccount',
     summary: 'Account operations; only Host consumers can obtain a request credential.',
     description: 'Account operations; only Host consumers can obtain a request credential.',
@@ -5065,6 +5096,10 @@ export const TYPE_API: readonly TypeApiEntry[] = [
     declaration: 'export interface DailyScheduleRecord {\n    readonly id: ScheduleId;\n    readonly kind: \'daily\';\n    readonly title: string;\n    readonly prompt: string;\n    readonly time: string;\n    readonly timeZone: string;\n    readonly scheduledAt: string;\n}',
   },
   {
+    name: 'DataJuicerStatus',
+    declaration: 'export interface DataJuicerStatus {\n    readonly phase: \'connecting\' | \'ready\' | \'unavailable\' | \'closed\';\n    readonly endpoint: string;\n    readonly message?: string;\n}',
+  },
+  {
     name: 'DeepSeekLlmApiExtensionMap',
     declaration: 'export interface DeepSeekLlmApiExtensionMap {\n}',
   },
@@ -5123,6 +5158,10 @@ export const TYPE_API: readonly TypeApiEntry[] = [
   {
     name: 'DirectoryRegistrationHandle',
     declaration: 'export interface DirectoryRegistrationHandle {\n    (): void;\n    replace(entries: readonly LlmConfigurableProvider[]): void;\n}',
+  },
+  {
+    name: 'DiscoveryOperation',
+    declaration: 'export type DiscoveryOperation = \'configuration\' | \'loading\' | \'operators\';',
   },
   {
     name: 'Domain',

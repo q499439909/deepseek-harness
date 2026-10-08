@@ -1,0 +1,46 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write packages/experimental/data-juicer/README.md
+/:
+  en: 0a652e61d867258b
+  zh: 1a89422caf01d94a
+/deepseek-ai-dsh-experimental-data-juicer:
+  en: 7b7422d67697d274
+  zh: c7f53607d26480d5
+/deepseek-ai-dsh-experimental-data-juicer/summary:
+  en: 126b645c55d58280
+  zh: b1b5f882153d1540
+/deepseek-ai-dsh-experimental-data-juicer/table-of-contents:
+  en: d152484eb41ac6b4
+  zh: 364c80ee00a374ff
+/deepseek-ai-dsh-experimental-data-juicer/use-this-package:
+  en: 63e6c42f02671496
+  zh: a529a60a083d885a
+/deepseek-ai-dsh-experimental-data-juicer/understand-the-implementation:
+  en: a47fd664c315ce36
+  zh: 8e15300b0bc90944
+/deepseek-ai-dsh-experimental-data-juicer/further-exploration:
+  en: 4e603e1a8c7ad0ce
+  zh: e1bc93bfa01357d2
+/deepseek-ai-dsh-experimental-data-juicer/model-experience:
+  en: 215e7ba838619b7b
+  zh: a311da3843709f90
+/deepseek-ai-dsh-experimental-data-juicer/model-experience/metadata-discovery-tool:
+  en: e2dc53199fe70818
+  zh: 41a83f96cf3eb184
+/deepseek-ai-dsh-experimental-data-juicer/model-experience/metadata-discovery-tool/what-the-model-sees:
+  en: 3fabf5bf7a3e09e3
+  zh: e0d0a8bb14317d2d
+/deepseek-ai-dsh-experimental-data-juicer/model-experience/metadata-discovery-tool/token-effect:
+  en: 35ba283bafa802c4
+  zh: a0ecf9942b28f4c3
+/deepseek-ai-dsh-experimental-data-juicer/model-experience/metadata-discovery-tool/kv-cache-effect:
+  en: 14d2702f7d538dde
+  zh: d7d158ede9cbb421
+/deepseek-ai-dsh-experimental-data-juicer/known-limitations-and-deferred-work:
+  en: ea15ec9d2197b5fc
+  zh: db3a739c3dacf515
+/deepseek-ai-dsh-experimental-data-juicer/known-limitations-and-deferred-work/dev-note:
+  en: d0ec60d4a9d5af5d
+  zh: cec17689b366cb96

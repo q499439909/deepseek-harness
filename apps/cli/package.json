@@ -102,6 +102,7 @@
     "@deepseek-ai/dsh-atomic-write": "workspace:*",
     "@deepseek-ai/dsh-agent-preset": "workspace:*",
     "@deepseek-ai/dsh-experimental-voice-input-bundle": "workspace:*",
+    "@deepseek-ai/dsh-experimental-data-juicer-bundle": "workspace:*",
     "@deepseek-ai/dsh-experimental-auto-review": "workspace:*"
   },
   "devDependencies": {
